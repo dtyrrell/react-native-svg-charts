@@ -72,9 +72,6 @@ class Chart extends PureComponent {
             .clamp(clampY)
 
         const x = xScale()
-            .domain([xMin, xMax])
-            .range([left, width - right])
-            .clamp(clampX)
 
         const paths = this.createPaths({
             data: mappedData,
